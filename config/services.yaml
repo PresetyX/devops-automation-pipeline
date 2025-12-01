@@ -1,0 +1,15 @@
+services:
+  - name: app
+    url: http://localhost:8080/health
+    retries: 3
+  - name: api-docs
+    url: http://localhost:8080/docs
+backup:
+  sources: [config]
+  destination: backups
+  keep: 5
+deploy:
+  image: ghcr.io/presetyx/devops-automation-pipeline
+  namespace: production
+  replicas: 3
+  port: 8080
