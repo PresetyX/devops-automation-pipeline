@@ -44,3 +44,7 @@ terraform plan
 ```
 
 Creates an immutable-tag ECR repository with scan-on-push and a versioned S3 bucket that expires backups after `backup_retention_days`.
+
+## Development history
+
+This project was developed locally between 2025-11-26 and 2025-12-06. The commit history was created afterwards, and the commit dates were adjusted to match the period in which the work was actually done.
